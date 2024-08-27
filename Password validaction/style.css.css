@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body{
+    display: grid; 
+    place-content:center;
+    min-height: 100vh;
+
+}
+.container{
+    background-color: aqua;
+    width:280px;
+    height:300px;
+    box-shadow: 0px 10px 10px 0px rgb(65, 56, 56);
+    border-radius: 10px;
+    display: grid; 
+    text-align: center;
+}
+#innerpassword h1{
+    padding: 10px;
+}
+#innerpassword input{
+    border-radius: 20px;
+    width: 200px;
+    height:30px;
+}
+#outerpassword h1{
+    padding: 10px;  
+}
+#outerpassword input{
+    border-radius: 20px;
+    width: 200px;
+    height:30px;
+}
+#Message{
+    background-color: rgb(54, 30, 210);
+    color:rgb(17, 16, 16) ;
+    border-radius: 20px;
+    width: 200px;
+    height:30px;
+    padding: 10px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 100;
+
+    /* text-align: center;
+    display: grid; */
+}
+
+button {
+    padding:5px;
+    border-radius:20px;
+    width:100px;
+    margin-left:80px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#outerpassword #icon{
+    border-radius:10px;
+
+
+}
+

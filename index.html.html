@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> password page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="C:\Users\Dell\Desktop\frontend.gs\git\Password validaction\style.css.css">
+    </head>
+    <script>
+        function checkpassword(){
+            let password=document.querySelector("#password").value;
+            // console.log(pass)
+            let confirmpassword=document.querySelector("#conformpassword").value;
+            console.log( password,conformpassword)
+            let message=document.querySelector("#Message");
+            let  icon = document.querySelector(".fa-solid fa-eye-slash")
+            // console.log( password,confirmpassword)
+
+            if(password.length !=0){
+                if(password==conformpassword){
+                    message.textContent="PASSWORD MATCH";
+                    // message.textContent="icon"
+                }
+                else{
+                    message.textContent="PASSWORD NOT MATCH";
+            }
+        }
+    }
+    </script>
+    <body>
+        <div class="container">
+            <div id="innerpassword">
+                <h1>Password</h1>
+                <input id="password" type="password"placeholder="enter your password">
+                <!-- <i class="fa-solid fa-eye-slash"></i> -->
+            </div>
+                <div id="outerpassword">
+                    <h1>Conformpassword</h1>
+                    <input type ="password"id="conformpassword" placeholder="Enter confrom password">
+                   <!-- <i class="fa-solid fa-eye-slash"></i> -->
+                </div>
+            <div class="content">
+                <p id="Message"></p>
+            </div>
+            <button onclick="checkpassword()">Submit</button>
+        </div> 
+    </body>
+
+
+</html>

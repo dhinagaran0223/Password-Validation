@@ -1,0 +1,86 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #115d45;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    
+ 
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 150px;
+    padding: 20px;
+    background-color: #0c396c;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(24, 131, 10, 0.1);
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+input[type="password"] {
+    width: calc(100% - 30px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #bd163d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #b000b3;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+#Message {
+    color:white; /* Red color for error messages */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    input[type="password"] {
+        width: calc(100% - 25px);
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+}
